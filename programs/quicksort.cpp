@@ -2,22 +2,25 @@
 using namespace std;
 
 int partition(int a[],int l,int h)
-{   int pivot=l;
+{   int pivot=a[l];
     int i=l;
     int j=h;
   while(i<j)
   {
     do{
         i++;
-    }while(a[i]<pivot);
+    }while(a[i]<=pivot);
 
     do{
         j--;
     }while(a[j]>pivot);
 
-    int temp=a[i];
+    if(i<j)
+    {
+        int temp=a[i];
     a[i]=a[j];
     a[j]=temp;
+    }
   }
   int temp=a[l];
     a[l]=a[j];
