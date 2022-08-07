@@ -6,7 +6,7 @@ void knapsack(int v[], int w[], int n, int W)
     int k[100][100];
 
     cout << "enter your values and weights\n";
-    for (int i = 0; i < n; i++)
+    for (int i = 1; i <= n; i++)
     {
         cin >> v[i] >> w[i];
     }
