@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 
-
 void merge(int a[],int l,int m,int h)
 {
   int i,j,k;
@@ -64,7 +63,7 @@ int main()
 {
     int n;
     
-    cout<<"enter the number of elements in array \n";
+    cout<<"enter the number of elements in array  >>\n";
     cin>>n;
 
     int *a=(int*)malloc(n*sizeof(int));
